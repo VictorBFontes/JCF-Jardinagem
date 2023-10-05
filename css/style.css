@@ -34,7 +34,7 @@ body{
 main{
 width: 100%;
 margin: auto;
-height: 1500px;
+height: auto;
 }
 
 /*Estilização HEADER*/
@@ -162,7 +162,7 @@ height: 1500px;
   position: relative;
   padding-left: 0;
   margin: 0;
-  height: 720px;
+  height:  105.39vh;
 }
 
 
@@ -737,6 +737,7 @@ margin-left: 40px;
 
 #precoGeral{
   width: 90%;
+  padding-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -769,7 +770,7 @@ margin-left: 40px;
 
 #areaSup{
   width: 100%;
-  height: 110px;
+  height:  8.72vw;
   background-color: #334E4F;
   display: flex;
   flex-direction: column;
@@ -785,7 +786,7 @@ margin-left: 40px;
 }
 #areaSup2{
   width: 100%;
-  height: 110px;
+  height: 8.72vw;
   background-color: #243A3B;
   display: flex;
   flex-direction: column;
@@ -801,7 +802,7 @@ margin-left: 40px;
 }
 #areaSup3{
   width: 100%;
-  height: 110px;
+  height: 8.72vw;
   background-color: #1C7C52;
   display: flex;
   flex-direction: column;
@@ -868,12 +869,13 @@ margin-left: 40px;
 }
 
 #compraPreco{
-  width: 10rem;
-  height: 3rem;
+  width:  8.33vw;
+  height: 5.02vh;
   border-radius: 20px;
   background-color: #C1CDC7 ;
-  font-size: 1.3vw;
+  font-size: 1vw;
   font-weight: 400;
+  padding: 5px;
   font-style: normal;
   display: inline-block;
   vertical-align: middle;
@@ -945,7 +947,7 @@ margin-left: 40px;
 
 .timePort{
   width: 25%;
-  height: 430px;
+  height: 32.39vw;
   background-color: #1C7C52;
   color: #fff;
   border: 5px solid #1C7C52;
