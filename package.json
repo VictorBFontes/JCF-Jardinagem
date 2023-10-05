@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "aos": "^2.3.4",
     "hover.css": "^2.3.2"
   }
 }

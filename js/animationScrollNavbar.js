@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction(){
-    if(document.body.scrollTop >  550| document.documentElement.scrollTop > 550) {
+    if(document.body.scrollTop >  200| document.documentElement.scrollTop > 200) {
         document.getElementById("header").style.backgroundColor = "#DEEDE5";
         document.getElementById("header").style.height = "100px";
     }else{

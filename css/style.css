@@ -43,17 +43,19 @@ height: 1500px;
     height: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
+    position: fixed;
     z-index: 90;
     transition: 1s;
 }
 
 #imglogo{
-    width: 280px;
-    height: 60px;
+    width: 18.22vw;
+    height: 4vw;
     background-image: url(../images/logo.png);
+    background-size: contain;
     background-repeat: no-repeat;
     transition: all .6s;
 }
@@ -117,10 +119,11 @@ height: 1500px;
 }
 
 #logo-home{
-    width: 390px;
-    height: 370px;
+    width: 25.39vw;
+    height: 50%;
     transform: rotate(-10.47deg);
     background-image: url(../images/LogoCentral.png);
+    background-size: contain;
     background-repeat: no-repeat;
     filter: drop-shadow(6px 8px 4px rgba(0, 0, 0, 0.25));
     animation: floating 4s ease-in-out infinite;
@@ -325,13 +328,13 @@ font-weight: 400;
   position: relative;
   display: flex;
   flex-direction: row;
+  background-color: #DEEDE5;
   width: 100%;
-  height: 600px;
+  height: 85.34vh;
 }
 .sobreNos1{
   width: 50%;
-  height: 600px;
-  background-color: #DEEDE5;
+  height: 85.34vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -355,7 +358,7 @@ font-weight: 400;
 
 #imagem-sobreNos1{
   width: 75%;
-  height: 430px;
+  height: 28vw;
   background: url(../images/imgCarrousel4.jpeg), lightgray 0px -16.832px / 100% 143.118% no-repeat;
   background-size: cover;
   animation: floatSobre 4s ease-in-out infinite;
@@ -365,7 +368,7 @@ font-weight: 400;
   position: absolute;
   left: 16%;
   width: 33%;
-  height: 277px;
+  height: 18vw;
   background: url(../images/cart.jpg), lightgray 0px -16.832px / 100% 143.118%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -376,9 +379,8 @@ font-weight: 400;
 
 
 .sobreNos2{
-  width: 50%;
+  width: 45%;
   height: 600px;
-  background-color: #DEEDE5;
 }
 
 .areaTextsobreNos2{
@@ -393,17 +395,18 @@ margin-left: 40px;
 #titulo-sobreNos2{
   color: #334E4F;
   font-family: 'Quick-kiss';
-  font-size: 45px;
+  font-size: 3vw;
   font-style: normal;
   font-weight: 400;
 }
 
 #text-sobreNos2{
   color: #000;
-  font-size: 20px;
+  font-size: 1.35vw;
   font-style: normal;
   font-weight: 400;
   padding-left: 60px;
+  padding-bottom: 50px;
 }
 
 /*Fim Sobre nós*/
@@ -741,7 +744,7 @@ margin-left: 40px;
 
 #precoBasico, #precoTotal, #precoPremium{
   width: 25%;
-  height: 430px;
+  height: 30vw;
   background-color: #d9d9d9;
   filter: drop-shadow(3px 6px 4px rgba(0, 0, 0, 0.25));
   display: flex;
@@ -814,15 +817,15 @@ margin-left: 40px;
 }
 
 #servico{
-  font-size: 24px;
+  font-size: 1.56vw;
 }
 
 #preco{
-  font-size: 35px;
+  font-size: 2.27vw;
 }
 
 #mes{
-  font-size: 14px;
+  font-size: 1vw;
 }
 
 #test{
@@ -835,7 +838,7 @@ margin-left: 40px;
 #textPreco{
   width: 80%;
   text-align: center;
-  font-size: 15px;
+  font-size: 1vw;
   font-weight: bold;
   padding-bottom: 20px;
 }
@@ -844,7 +847,7 @@ margin-left: 40px;
   width: 90%;
   display: flex;
   flex-direction: row;
-  font-size: 16px;
+  font-size: 1.1vw;
   font-weight: bold;
   font-style: italic;
   justify-content: center;
@@ -858,7 +861,7 @@ margin-left: 40px;
 
 #botao2{
   width: 100%;
-  height: 215px;
+  height: 14vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -869,7 +872,7 @@ margin-left: 40px;
   height: 3rem;
   border-radius: 20px;
   background-color: #C1CDC7 ;
-  font-size: 20px;
+  font-size: 1.3vw;
   font-weight: 400;
   font-style: normal;
   display: inline-block;
@@ -923,7 +926,7 @@ margin-left: 40px;
 
 #nossoTime{
   width: 100%;
-  height: 100vh;
+  height: 70vw;
   background-color: #DEEDE5;
   display: flex;
   flex-direction: column;
@@ -947,6 +950,7 @@ margin-left: 40px;
   color: #fff;
   border: 5px solid #1C7C52;
   filter: drop-shadow(8px 6px 4px rgba(0, 0, 0, 0.25));
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -954,7 +958,7 @@ margin-left: 40px;
 }
 
 .timePort h3{
-font-size: 30px;
+font-size: 2vw;
 font-size: bold;
 font-style: italic;
 padding: 5px;
@@ -1146,9 +1150,9 @@ textarea{
   margin-top: 20px;
   background-color: transparent;
   border: 2px solid #fff;
-  width: 15%;
+  width: 20%;
   height: 50px;
-  font-size: 15px;
+  font-size: 1vw;
   color: #FFF;
   font-weight: 700;
   transition: all .8s;
@@ -1167,7 +1171,7 @@ textarea{
 
 #rodape{
   width: 100%;
-  height: 300px;
+  height: auto;
   background-color: #B1CDB7;
 }
 
@@ -1175,6 +1179,8 @@ textarea{
   width: 88%;
   height: 90%;
   margin: auto;
+  padding: 30px;
+  gap: 2px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1182,12 +1188,12 @@ textarea{
 }
 
 #leftFooter{
-  width: 18.125em;
-  height: 166px;
+  width: 18.88vw;
+  height: 10.80vw;
 }
 
 #leftFooter span{
-  font-size: 12px;
+  font-size: 0.78vw;
   font-weight: 400;
 }
 
@@ -1207,13 +1213,13 @@ textarea{
 #links1{
   display: flex;
   flex-direction: column;
-width: 250px;
+width: 16.27vw;
 color: #243A3B;
 gap: 10px;
 }
 
 #links1 span{
-  font-size: 17px;
+  font-size: 1.10vw;
   font-weight: bold;
 }
 
@@ -1222,6 +1228,7 @@ gap: 10px;
 }
 
 #links1 a{
+  font-size: 1vw;
   color: #000;
   text-decoration: none;
 }
@@ -1229,13 +1236,13 @@ gap: 10px;
 #links2{
   display: flex;
   flex-direction: column;
-width: 250px;
+  width: 16.27vw;
 color: #243A3B;
 gap: 10px;
 }
 
 #links2 span{
-  font-size: 17px;
+  font-size: 1.10vw;
   font-weight: bold;
 }
 
@@ -1246,12 +1253,13 @@ gap: 10px;
 }
 
 #links2 a{
+  font-size: 1vw;
   color: #000;
   text-decoration: none;
 }
 
 #rightFooter{
-  width: 260px;
+  width: 17vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1260,11 +1268,12 @@ gap: 10px;
 }
 
 #contatoFooter{
-  font-size: 17px;
+  font-size: 1.10vw;
   font-weight: bold;
 }
 
 #rightFooter ul{
+  font-size: 1vw;
   display: grid;
   gap: 10px;
   list-style-type: none;
