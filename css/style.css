@@ -37,10 +37,14 @@ margin: auto;
 height: 1500px;
 }
 
+a{
+  text-decoration: none;
+}
+
 /*Estilização HEADER*/
-#header{
+.header{
     width: 100%;
-    height: auto;
+    height: 90px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -49,6 +53,7 @@ height: 1500px;
     position: fixed;
     z-index: 90;
     transition: 1s;
+    overflow: hidden;
 }
 
 #imglogo{
@@ -63,9 +68,10 @@ height: 1500px;
   width: 295px;
 }
 
-.botao{
-    width: 120px;
-    height: 40px;
+.botao, .botaoSobreNos{
+  display: block;
+    width: 7.5em;
+    height: 2.5em;
     border-radius: 13px;
     padding: 10px;
     background-color: #2e9f6d;
@@ -74,12 +80,23 @@ height: 1500px;
     cursor: pointer;
 }
 
-.botao:hover{
+.botao:hover, .botaoSobreNos:hover{
     width: 140px;
     height: 60px;
     font-size: 20px;
     background-color: #164E36;
     color: #fff;
+}
+
+.icon{
+  margin-top: 3px;
+  display: none;
+  color: #2e9f6d;
+  transition: all .8s;
+}
+
+.icon:hover{
+  color: #1d3a2d;
 }
 
 /*Fim da HEADER*/
@@ -162,6 +179,7 @@ height: 1500px;
   position: relative;
   padding-left: 0;
   margin: 0;
+  width: 60vw;
   height: 720px;
 }
 
@@ -230,7 +248,8 @@ img{
 
 @media screen and (max-width: 766px) {
   .brands-container {
-    max-width: 200px;
+    max-width: 100%;
+    height: 50vw;
   }
   .brands-carousel > picture {
     animation: carousel-responsive 20s linear infinite;
@@ -297,7 +316,7 @@ font-weight: 400;
 
 #buttonAgenda, #buttonSaiba{
   width: 12.04vw;
-  height: 8.25vh;
+  height: 4.50vw;
   border-radius: 20px;
   font-size: 1.50vw;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -310,8 +329,8 @@ font-weight: 400;
 }
 
 #buttonAgenda:hover, #buttonSaiba:hover{
-  width: 190px;
-  height: 61px;
+  width: 13vw;
+  height: 5vw;
   font-size: 22px;
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
 }
@@ -330,7 +349,7 @@ font-weight: 400;
   flex-direction: row;
   background-color: #DEEDE5;
   width: 100%;
-  height: 85.34vh;
+  height: 105.34vh;
 }
 .sobreNos1{
   width: 50%;
@@ -379,13 +398,13 @@ font-weight: 400;
 
 
 .sobreNos2{
-  width: 45%;
+  width: 55%;
   height: 600px;
 }
 
 .areaTextsobreNos2{
   width: 90%;
-  height: 70%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -408,6 +427,7 @@ margin-left: 40px;
   padding-left: 60px;
   padding-bottom: 50px;
 }
+
 
 /*Fim Sobre nós*/
 
@@ -725,7 +745,7 @@ margin-left: 40px;
 
 #precos{
   width: 100%;
-  height: 95vh;
+  height: auto;
   background-color: #DEEDE5;
   display: flex;
   flex-direction: column;
@@ -926,7 +946,7 @@ margin-left: 40px;
 
 #nossoTime{
   width: 100%;
-  height: 70vw;
+  height: auto;
   background-color: #DEEDE5;
   display: flex;
   flex-direction: column;
@@ -937,6 +957,8 @@ margin-left: 40px;
 #areaTime{
   width: 100%;
   height: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -974,6 +996,8 @@ padding: 5px;
   width: 100%;
   height: 70%;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #imagePort{
@@ -1322,6 +1346,112 @@ hr{
 @media screen and (max-width : 768px)
 {
 
+  .headerresponsive{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    transition: all 1s;
+    z-index: 90;
+  }
+
+  .headerresponsive #boton{
+    position: relative;
+    margin: 30px 5px 0;
+    display: flex;
+    text-align: center;
+    transition: all 1s;
+  }
+
+
+  .header .botao{
+    display: none;
+  }
+
+  .icon{
+    display: block;
+    position: absolute;
+    top:15%;
+    right: 50px;
+  }
+
+
+  #sobreNos{
+    flex-wrap: wrap;
+    height: 70vw;
+  }
+  
+  .sobreNos1{
+    width: 45%;
+    height: 400px;
+  }
+
+  #imagem-sobreNos2{
+
+    width: 32%;
+  }
+
+  .sobreNos2{
+    margin-top: 100px;
+    height: 60.04vw;
+  }
+
+  .areaTextsobreNos2{
+    height: 60%;
+  }
+
+  .botaoSobreNos{
+    width: 12.25vw;
+    font-size: 2.10vw;
+  }
+
+  #galeria{
+    column-count: 2;
+  }
+
+  #precoBasico, #precoTotal, #precoPremium{
+    width: 80%;
+    height: 42vh;
+  }
+
+  #servico{
+    font-size: 3.05vh;
+  }
+
+  #preco{
+    font-size: 3vh;
+  }
+
+  #mes{
+    font-size: 1.5vh;
+  }
+
+  #servOptions{
+    font-size: 2vh;
+  }
+
+  #areaTime{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .timePort{
+    width: 75%;
+  }
+
+  #imagePort, #imagePort2, #imagePort3{
+    background-position: top;
+  }
+
+  #imagePort3{
+    background-size: contain;
+  }
+
+  .infoProjects{
+    height: 60vh;
+  }
+
   .wrapper{
     width: 90vw;
     flex-wrap: wrap;
@@ -1331,6 +1461,23 @@ hr{
     width: calc(50% - 40px);
     height: 30vmin;
     font-size: 14px;
+  }
+
+  .containerInfo{
+    height: auto;
+    flex-direction: column;
+  }
+
+  #contato{
+    height: 230vh;
+  }
+
+  #infoContato{
+    width: 100%;
+  }
+
+  #formsContato{
+    width: 100%;
   }
 
   .cards
@@ -1364,14 +1511,116 @@ hr{
   {
     transform:scale(0.75);
   }
+
+  .innerFooter{
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+
+  }
+
+  #leftFooter{
+    width: 100%;
+  }
+
+  #links1, #links2, #rightFooter{
+    width: 30%;
+  }
+
+
 }
 
 
 @media screen and (max-width: 1024px){
 
-  
+  .textoHome{
+    top: 25%;
+    left: 5%;
+  }
 
+  #buttonAgenda, #buttonSaiba{
+    font-size: 1.80vw;
+  }
 
+  #imagem-sobreNos1{
+    height: 34vw;
+  }
+
+  #imagem-sobreNos2{
+    left: 14%;
+    height: 23.33vw;
+  }
+
+  .areaTextsobreNos2{
+    margin-left: 15px;
+  }
+
+  #titulo-sobreNos2{
+    font-size: 3.50vw;
+  }
+
+  #text-sobreNos2{
+    font-size: 1.60vw;
+    padding-left: 20px;
+  }
+
+  #precoGeral{
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  #precoBasico, #precoTotal, #precoPremium{
+    width: 85%;
+  }
+
+  #test{
+    padding-top: 5px;
+  }
+
+  #textPreco{
+    font-size: 1.50vh;
+    padding-bottom: 4px;
+  }
+
+  #compraPreco{
+    width: 23vw;
+    height: 6.12vh;
+    font-size: 1.55vh;
+  }
+
+  .enviarForm{
+    width: 40%;
+    height: 4.70vw;
+  }
+
+  #leftFooter span{
+    font-size: 1.20vw;
+  }
+
+  #links1 span{
+    font-size: 2vw;
+  }
+
+  #links1 a{
+    font-size: 1.50vw;
+  }
+
+  #links2 span{
+    font-size: 2vw;
+  }
+
+  #links2 a{
+    font-size: 1.50vw;
+  }
+
+  #contatoFooter{
+    font-size: 2vw;
+  }
+
+  #rightFooter ul{
+    font-size: 1.50vw;
+  }
 
   .wrapper{
     width: 85vw;

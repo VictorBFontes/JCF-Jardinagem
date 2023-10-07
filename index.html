@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="js/animationScrollNavbar.js"></script>
     <script src="js/carrouselNossosServiços.js"></script>
+    <script src="js/menuHamburguer.js"></script>
 
     <link href="css/hover.css" rel="stylesheet" media="all">
 
@@ -19,12 +20,16 @@
 </head>
 <body>
    <!--Cabeçalho-->
-    <header id="header">
+    <header class="header" id="header23">
        <a href="#"><div id = "imglogo"></div></a>
-            <a href="#nossosServicos"><button class = "botao">Serviços</button></a>
-            <a href="#portifolio"><button class = "botao">Portifólio</button></a>
-            <a href="#nossoTime"><button class = "botao">Nosso time</button></a>
-            <a href="#contato"><button class = "botao">Contato</button></a>
+            <a href="#nossosServicos"><button class = "botao" id="boton">Serviços</button></a>
+            <a href="#portifolio"><button class = "botao" id="boton">Portifólio</button></a>
+            <a href="#nossoTime"><button class = "botao" id="boton">Nosso time</button></a>
+            <a href="#contato"><button class = "botao" id="boton">Contato</button></a>
+        
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
     </header>
     <!--FIM DO CABEÇALHO-->
 
@@ -81,6 +86,23 @@
 
         <!--Área "Sobre Nós"-->
     <div id="sobreNos">
+
+      <!--titulo da section Sobre nós-->
+      <div style="width: 22.85vw; height: 6.60vw; position: absolute; left: 50%;">
+
+        <div style="left: 0px; top: 11px; position: absolute; color: black; font-size: 3.25vw; font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Sobre nós</div>
+
+
+        <div style="width: 27px; height: 27px; left: 34%; top: 80%; position: absolute">
+          <div style="width: 1.62vw; height: 1.57vw; left: 0.90px; top: 1.02px; position: absolute;"> <img src="images/game-icons_three-leaves.png"></div>
+        </div>
+
+        <div style="width: 25%; height: 0px; left: 30%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+
+        <div style="width: 25%; height: 0px; left: 70%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+      </div>
+      <!--fim do título da section-->
+
         <section class="sobreNos1">
 
             <div data-aos="fade-right" id="imagem-sobreNos1"></div>
@@ -90,34 +112,12 @@
         </section>
         <section class="sobreNos2">
 
-            <!--titulo da section Sobre nós-->
-            <div style="width: 351px; height: 87px; position: relative">
-
-                <div style="left: 0px; top: 11px; position: absolute; color: black; font-size: 50px; font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Sobre nós</div>
-
-                <div style="width: 72px; height: 72px; left: 279px; top: 0px; position: absolute">
-                  <div style="width: 56.25px; height: 56.25px; left: 7.88px; top: 7.88px; position: absolute">
-                
-                    <div style="width: 56.25px; height: 36px; left: 0px; top: 20.25px; position: absolute;"> <img src="images/charm_people.png" alt=""></div>
-                  </div>
-                </div>
-
-                <div style="width: 27px; height: 27px; left: 117px; top: 60px; position: absolute">
-                  <div style="width: 24.89px; height: 25.01px; left: 0.90px; top: 1.02px; position: absolute;"> <img src="images/game-icons_three-leaves.png"></div>
-                </div>
-
-                <div style="width: 88px; height: 0px; left: 106px; top: 80px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
-
-                <div style="width: 88px; height: 0px; left: 243px; top: 80px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
-              </div>
-              <!--fim do título da section-->
-
               <!--Área de texto da section "Sobre nós"-->
             <section class="areaTextsobreNos2">
               <h4 id="titulo-sobreNos2">Tornando sua grama mais verde<br>que a do vizinho</h4>
 
               <p id="text-sobreNos2">Nós da empresa JCF, prezamos pelo bem estar de nossos clientes e colaboradores, melhorando seu ambiente ao redor e dexando o clima mais leve e elegante! Com a nossa atual equipe, faremos tudo que for necessário para um ambiente mais verde!!</p>
-              <a href="#contato"><button class = "botao">Contato</button></a>
+              <a href="#contato"><button class = "botaoSobreNos">Contato</button></a>
             </section>
             <!--Fim da área de texto desta section-->
             
@@ -129,15 +129,19 @@
     <!--Inicio Nossos serviços-->
         <section id="nossosServicos">
 
-            <div style="width: 414px; height: 74px; position: relative">
-                <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 50px; font-family: Montserrat; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Nossos serviços</div>
-                <div style="width: 27px; height: 27px; left: 181px; top: 47px; position: absolute">
-                  <div style="width: 24.89px; height: 25.01px; left: 0.90px; top: 1.02px; position: absolute"> <img src="images/game-icons_three-leaves.png"></div>
-                </div>
-                <div style="width: 88px; height: 0px; left: 170px; top: 67px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
-                <div style="width: 88px; height: 0px; left: 307px; top: 67px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
-              </div> 
-              
+          <div style="width: 30.85vw; height: 6.60vw; position: relative">
+
+            <div style="left: 0px; top: 11px; position: absolute; color: black; font-size: 3.25vw; font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Nossos serviços</div>
+    
+    
+            <div style="width: 27px; height: 27px; left: 38%; top: 80%; position: absolute">
+              <div style="width: 1.62vw; height: 1.57vw; left: 0.90px; top: 1.02px; position: absolute;"> <img src="images/game-icons_three-leaves.png"></div>
+            </div>
+    
+            <div style="width: 25%; height: 0px; left: 30%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+    
+            <div style="width: 25%; height: 0px; left: 76.5%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+          </div>
               <!--Carroussel Nossos Serviços-->
 
               <div class="cards">
@@ -188,13 +192,18 @@
         <section id="portifolio">
 
 
-          <div style="width: 243px; height: 74px; position: relative">
-            <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 50px; font-family: Montserrat; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Portifólio</div>
-            <div style="width: 27px; height: 27px; left: 108px; top: 47px; position: absolute">
-              <div style="width: 24.89px; height: 25.01px; left: 0.90px; top: 1.02px; position: absolute"> <img src="images/game-icons_three-leaves.png"></div>
+          <div style="width: 18.85vw; height: 6.60vw; position: relative;">
+
+            <div style="left: 0px; top: 11px; position: absolute; color: black; font-size: 3.25vw; font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Portifólio</div>
+    
+    
+            <div style="width: 27px; height: 27px; left: 38%; top: 80%; position: absolute">
+              <div style="width: 1.62vw; height: 1.57vw; left: 0.90px; top: 1.02px; position: absolute;"> <img src="images/game-icons_three-leaves.png"></div>
             </div>
-            <div style="width: 72px; height: 0px; left: 97px; top: 67px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
-            <div style="width: 72px; height: 0px; left: 218px; top: 67px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+    
+            <div style="width: 25%; height: 0px; left: 30%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+    
+            <div style="width: 25%; height: 0px; left: 80%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
           </div>
 
           <div id="galeria">
@@ -222,13 +231,18 @@
 
         <section id="precos">
 
-          <div style="width: 178px; height: 75px; position: relative; padding-bottom: 20px;">
-            <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 50px; font-family: Montserrat; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Preços</div>
-            <div style="width: 27px; height: 27px; left: 75px; top: 48px; position: absolute">
-              <div style="width: 24.89px; height: 25.01px; left: 0.90px; top: 1.02px; position: absolute"> <img src="images/game-icons_three-leaves.png"></div>
+          <div style="width: 13.85vw; height: 6.60vw; position: relative; margin-bottom: 40px;">
+
+            <div style="left: 0px; top: 11px; position: absolute; color: black; font-size: 3.25vw; font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Preços</div>
+    
+    
+            <div style="width: 27px; height: 27px; left: 38%; top: 80%; position: absolute">
+              <div style="width: 1.62vw; height: 1.57vw; left: 0.90px; top: 1.02px; position: absolute;"> <img src="images/game-icons_three-leaves.png"></div>
             </div>
-            <div style="width: 49px; height: 0px; left: 64px; top: 68px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
-            <div style="width: 49px; height: 0px; left: 162px; top: 68px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+    
+            <div style="width: 25%; height: 0px; left: 30%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+    
+            <div style="width: 25%; height: 0px; left: 84%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
           </div>
 
         <div id="precoGeral">
@@ -251,7 +265,7 @@
               <img src="images/confirm.png" alt=""><p>Coroação</p></div>
           </div>
         <div id="botao2">
-          <button id="compraPreco">Agende agora</button>
+          <a href="#contato"><button id="compraPreco">Agende agora</button></a>
         </div>
 
           </section>
@@ -277,7 +291,7 @@
               <img src="images/confirm.png" alt=""><p>+ 3 serviços de sua escolha!!</p></div>
           </div>
         <div id="botao2">
-          <button id="compraPreco">Agende agora</button>
+          <a href="#contato"><button id="compraPreco">Agende agora</button></a>
         </div>
 
           </section>
@@ -299,7 +313,7 @@
               <img src="images/confirm.png" alt=""><p>Cobrimento de qualquer erro futuro</p></div>
           </div>
         <div id="botao2">
-          <button id="compraPreco">Agende agora</button>
+          <a href="#contato"><button id="compraPreco">Agende agora</button></a>
         </div>
 
           </section>
@@ -313,13 +327,18 @@
 
         <section id="nossoTime">
 
-          <div style="width: 300px; height: 75px; position: relative">
-            <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 50px; font-family: Montserrat; font-style: italic; font-weight: 700; word-wrap: break-word">Nosso time</div>
-            <div style="width: 27px; height: 27px; left: 134px; top: 48px; position: absolute">
-              <div style="width: 24.89px; height: 25.01px; left: 0.90px; top: 1.02px; position: absolute;"><img src="images/game-icons_three-leaves.png" alt=""></div>
+          <div style="width: 22.85vw; height: 6.60vw; position: relative;">
+
+            <div style="left: 0px; top: 11px; position: absolute; color: black; font-size: 3.25vw; font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Nosso time</div>
+    
+    
+            <div style="width: 27px; height: 27px; left: 38%; top: 80%; position: absolute">
+              <div style="width: 1.62vw; height: 1.57vw; left: 0.90px; top: 1.02px; position: absolute;"> <img src="images/game-icons_three-leaves.png"></div>
             </div>
-            <div style="width: 109px; height: 0px; left: 123px; top: 68px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
-            <div style="width: 109px; height: 0px; left: 282px; top: 68px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+    
+            <div style="width: 25%; height: 0px; left: 30%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+    
+            <div style="width: 25%; height: 0px; left: 76.5%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
           </div>
 
           <section id="areaTime">
@@ -373,13 +392,18 @@
         <!--Inicio contato-->
 
         <section id="contato">
-          <div style="width: 461px; height: 75px; position: absolute; top: 0;">
-            <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 50px; font-family: Montserrat; font-style: italic; font-weight: 700; word-wrap: break-word">Entre em contato</div>
-            <div style="width: 27px; height: 27px; left: 204px; top: 48px; position: absolute">
-              <div style="width: 24.89px; height: 25.01px; left: 0.90px; top: 1.02px; position: absolute"><img src="/images/game-icons_three-leaves.png" alt=""></div>
+          <div style="width: 30.85vw; height: 6.60vw; position: absolute; top: 10px;">
+
+            <div style="left: 0px; top: 11px; position: absolute; color: black; font-size: 3.25vw; font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 700; word-wrap: break-word; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Entre em contato</div>
+    
+    
+            <div style="width: 27px; height: 27px; left: 45%; top: 80%; position: absolute">
+              <div style="width: 1.62vw; height: 1.57vw; left: 0.90px; top: 1.02px; position: absolute;"> <img src="images/game-icons_three-leaves.png"></div>
             </div>
-            <div style="width: 179px; height: 0px; left: 193px; top: 68px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
-            <div style="width: 179px; height: 0px; left: 418px; top: 68px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+    
+            <div style="width: 28%; height: 0px; left: 40%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
+    
+            <div style="width: 28%; height: 0px; left: 84%; top: 100%; position: absolute; transform: rotate(180deg); transform-origin: 0 0; border: 1px black solid"></div>
           </div>
 
           <section class="mapa">
