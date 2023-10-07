@@ -969,7 +969,7 @@ margin-left: 40px;
 
 .timePort{
   width: 25%;
-  height: 32.39vw;
+  height: 60vh;
   background-color: #1C7C52;
   color: #fff;
   border: 5px solid #1C7C52;
@@ -1417,6 +1417,10 @@ hr{
     height: 42vh;
   }
 
+  #areaSup, #areaSup2, #areaSup3{
+    height: 15vh;
+  }
+
   #servico{
     font-size: 3.05vh;
   }
@@ -1597,7 +1601,7 @@ hr{
   }
 
   #leftFooter span{
-    font-size: 1.20vw;
+    font-size: 12px;
   }
 
   #links1 span{
